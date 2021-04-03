@@ -18,6 +18,3 @@ while j < len(numbers_list) - 1:
     j += 2
 
 print(numbers_list)
-
-
-
