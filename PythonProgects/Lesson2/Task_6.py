@@ -1,6 +1,6 @@
 products_list = []
 while True:
-    print(end="\n")
+    print()
     command = input("Do you want to add product? (Y/N): ")
 
     if command.upper() == "Y":
@@ -27,8 +27,8 @@ while True:
         number = len(products_list) + 1
         product = (number, {"Name": name, "price": price, "count": count, "unit": unit})
         products_list.append(product)
+        print()
 
-        print(end="\n")
         specifications = {}
         specifications_keys = list(products_list[0][1].keys())
         for key in specifications_keys:
