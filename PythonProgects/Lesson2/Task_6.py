@@ -37,10 +37,11 @@ while True:
                 values_list.append(element[1].get(key))
 
             specifications[key] = list(set(values_list))
-
-        print(specifications)
     elif command.upper() == "N":
         print("Close program")
         break
     else:
         print("Unknown command!")
+
+print(products_list)
+print(specifications)
